@@ -21,10 +21,12 @@ for (int i = 0; i < array.Length; i++)
     {
         count++;
         Console.Write($" Количество четных чисел {count} ");
+        Console.WriteLine();
     }
     else
     {
         Console.Write("Четные числа не найдены ");
+        Console.WriteLine();
     }
 
 }
