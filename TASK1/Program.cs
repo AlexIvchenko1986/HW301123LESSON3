@@ -6,7 +6,7 @@
 // * _массив [10 21 14 93 23] => 2_
 
 
-int[] array = { 12, 8, 50, 25, 33, 97, 19, 39, 89, 77 };
+int[] array = { 12, 8, 9, 25, 33, 97, 19, 39, 89, 77 };
 int count = 0;
 int n = array.Length;
 int min = 20;
@@ -17,11 +17,6 @@ for (int i = 0; i < n; i++)
     if ((array[i] >= min) && (array[i] <= max))
     {
         count++;
-        Console.Write($" Количество элементов в диапозоне {count}");
     }
-    else
-    {
-        Console.WriteLine($"Найденные числа вне диапозона {array[i]} ");
-    }
-    Console.WriteLine();
 }
+Console.Write($" Количество элементов в диапозоне {count}");

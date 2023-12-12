@@ -7,10 +7,10 @@
 
 int[] array = new int[10];
 int count = 0;
-
+Random rnd = new Random();
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(1, 10);
+    array[i] = rnd.Next(1, 10);
     Console.Write(array[i] + " ");
 }
 Console.WriteLine();
@@ -20,13 +20,10 @@ for (int i = 0; i < array.Length; i++)
     if (array[i] % 2 == 0)
     {
         count++;
-        Console.Write($" Количество четных чисел {count} ");
-        Console.WriteLine();
     }
-    else
-    {
-        Console.Write("Четные числа не найдены ");
-        Console.WriteLine();
-    }
-
+    //else
+    // {
+    //     Console.Write("Четные числа не найдены ");
+    // }
 }
+Console.Write($" Количество четных чисел {count} ");
